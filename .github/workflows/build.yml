@@ -95,7 +95,7 @@ jobs:
             - name: Code formating
               if: steps.check_tag.outputs.exists == 'false'
               run: |
-                  pnpm prettier --write src/plus/gk/utils/checkin.utils.ts
+                  npx prettier --write src/plus/gk/utils/checkin.utils.ts
 
             - name: Remove source-repo
               if: steps.check_tag.outputs.exists == 'false'
